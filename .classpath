@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/javassist-3.7.ga.jar" sourcepath="/Users/mac/.m2/repository/jboss/javassist/3.7.ga/javassist-3.7.ga-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
