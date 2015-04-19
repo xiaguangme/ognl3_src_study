@@ -11,7 +11,9 @@ import java.util.ArrayList;
 
 import ognl.Ognl;
 import ognl.OgnlException;
+import ognl.OgnlRuntime;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.simonme.ognl.study.bean.BasicAttribute;
 import org.simonme.ognl.study.bean.Param;
@@ -27,6 +29,12 @@ import org.simonme.ognl.study.bean.Param;
  */
 public class SetValueTest
 {
+
+    @BeforeClass
+    public static void setup()
+    {
+        OgnlRuntime.setNullHandler(Object.class, new TestNullHandler());
+    }
 
     @Test
     public void testPrint()
