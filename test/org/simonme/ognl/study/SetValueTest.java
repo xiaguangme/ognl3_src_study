@@ -53,19 +53,12 @@ public class SetValueTest
     public void testSetValue4List()
     {
         BasicAttribute b = new BasicAttribute();
-        // OptionalConfiguration optionalConfig = new OptionalConfiguration();
-        // b.setOptionalConfig(optionalConfig);
-        // System.out.println(optionalConfig);
         try
         {
-            // Object o1 = Ognl.getValue("optionalConfig", b);
-            // System.out.println(o1);
             Param p1 = new Param();
             p1.setName("test");
             p1.setValue("testValue");
             Ognl.setValue(Ognl.parseExpression("optionalConfig.params"), b, new ArrayList<Param>());
-            // Object o = Ognl.getValue("optionalConfig.params.add(p1)", b);
-            // System.out.println(b.getOptionalConfig());
         }
         catch (OgnlException e)
         {
